@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This Is Signup Form</title>
+
+        <div class="container" align="center">
+
+        </div>
+
+
+</head>
+<body>
+<h1> Please Fill in The Form To Write The Exams </h1>
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token%}
+    <input type="submit" name="" value="Signup">
+</form>
+
+</body>
+{% endblock%}
+</html>
